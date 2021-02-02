@@ -7,13 +7,30 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Container(
-          color : warna1,
+          color : warnaBg,
+          padding: EdgeInsets.all(25),
           child: Column(
             children: [
               Expanded(
                 flex: 1,
                 child: Container(
-                  color: Colors.red,
+                  // color: Colors.red,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          color: Colors.amber,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          color: Colors.cyanAccent,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Expanded(
