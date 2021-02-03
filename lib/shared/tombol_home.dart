@@ -18,7 +18,7 @@ Widget tombolHome(
             child: Text(teks,
               style: GoogleFonts.cairo(
                 textStyle: TextStyle(
-                  fontSize: 30,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
                   color: warnaTeks,
                 ),
@@ -27,7 +27,7 @@ Widget tombolHome(
           ),
         ),
       ),
-      SizedBox(height: 15,),
+      SizedBox(height: 20,),
     ],
   );
 }

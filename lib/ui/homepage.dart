@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tpaquiz/shared/tombol_home.dart';
 import 'package:tpaquiz/shared/warna.dart';
+import 'package:tpaquiz/ui/analisa.dart';
+import 'package:tpaquiz/ui/nilai.dart';
+import 'package:tpaquiz/ui/peraturan.dart';
+import 'package:tpaquiz/ui/play.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -100,25 +104,49 @@ class HomePage extends StatelessWidget {
                             warnaButton: warnaTombolHome1,
                             teks: 'Play',
                             warnaTeks: warnaTeksHome,
-                            fungsi: () {}),
+                            fungsi: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => Play(),
+                                ),
+                              );
+                            }),
                         tombolHome(
                             context: context,
                             warnaButton: warnaTombolHome2,
                             teks: 'Nilai',
                             warnaTeks: warnaTeksHome,
-                            fungsi: () {}),
+                            fungsi: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => Nilai(),
+                                ),
+                              );
+                            }),
                         tombolHome(
                             context: context,
                             warnaButton: warnaTombolHome3,
-                            teks: 'Peraturan',
+                            teks: 'Analisa',
                             warnaTeks: warnaTeksHome,
-                            fungsi: () {}),
+                            fungsi: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => Analisa(),
+                                ),
+                              );
+                            }),
                         tombolHome(
                             context: context,
                             warnaButton: warnaTombolHome4,
-                            teks: 'Keluar',
+                            teks: 'Peraturan',
                             warnaTeks: warnaTeksHome,
-                            fungsi: () {}),
+                            fungsi: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => Peraturan(),
+                                ),
+                              );
+                            }),
                       ],
                     ),
                   ),
