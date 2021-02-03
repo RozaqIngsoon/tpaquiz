@@ -5,7 +5,7 @@ import 'package:tpaquiz/shared/warna.dart';
 import 'package:tpaquiz/ui/analisa.dart';
 import 'package:tpaquiz/ui/nilai.dart';
 import 'package:tpaquiz/ui/peraturan.dart';
-import 'package:tpaquiz/ui/play.dart';
+import 'package:tpaquiz/ui/mulai.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                                   style: GoogleFonts.fredokaOne(
                                     textStyle: TextStyle(
                                         fontSize: 60,
-                                        color: warnaTeksHome,
+                                        color: warnaTeks,
                                         letterSpacing: 1),
                                   ),
                                 ),
@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                                   style: GoogleFonts.fredokaOne(
                                     textStyle: TextStyle(
                                         fontSize: 60,
-                                        color: warnaTeksHome,
+                                        color: warnaTeks,
                                         letterSpacing: 1),
                                   ),
                                 ),
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                                   style: GoogleFonts.fredokaOne(
                                     textStyle: TextStyle(
                                         fontSize: 60,
-                                        color: warnaTeksHome,
+                                        color: warnaTeks,
                                         letterSpacing: 1),
                                   ),
                                 )
@@ -76,7 +76,7 @@ class HomePage extends StatelessWidget {
                               style: GoogleFonts.lobster(
                                 textStyle: TextStyle(
                                     fontSize: 200,
-                                    color: warnaTeksHome,
+                                    color: warnaTeks,
                                     letterSpacing: 1),
                               ),
                             ),
@@ -102,12 +102,12 @@ class HomePage extends StatelessWidget {
                         tombolHome(
                           context: context,
                             warnaButton: warnaTombolHome1,
-                            teks: 'Play',
-                            warnaTeks: warnaTeksHome,
+                            teks: 'Mulai',
+                            warnaTeks: warnaTeks,
                             fungsi: () {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
-                                  builder: (context) => Play(),
+                                  builder: (context) => Mulai(),
                                 ),
                               );
                             }),
@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
                             context: context,
                             warnaButton: warnaTombolHome2,
                             teks: 'Nilai',
-                            warnaTeks: warnaTeksHome,
+                            warnaTeks: warnaTeks,
                             fungsi: () {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
@@ -127,7 +127,7 @@ class HomePage extends StatelessWidget {
                             context: context,
                             warnaButton: warnaTombolHome3,
                             teks: 'Analisa',
-                            warnaTeks: warnaTeksHome,
+                            warnaTeks: warnaTeks,
                             fungsi: () {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
@@ -139,7 +139,7 @@ class HomePage extends StatelessWidget {
                             context: context,
                             warnaButton: warnaTombolHome4,
                             teks: 'Peraturan',
-                            warnaTeks: warnaTeksHome,
+                            warnaTeks: warnaTeks,
                             fungsi: () {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
